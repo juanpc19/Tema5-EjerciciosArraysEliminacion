@@ -32,22 +32,20 @@ public class Ejercicio3 {
 			System.out.println("c. Salir. ");
 
 			seleccion = dogma.next();
-
+			seleccion=seleccion.toLowerCase();
 			// el cambia mayus no funciona?
 
-			if (seleccion.equals("a") || seleccion.equals("b") || seleccion.equals("c")) {
-				seleccion.toUpperCase();
-			}
+		
 
 			// switch que evaluara a seleccion
 			switch (seleccion) {
 
 			// print de array tabla en caso "a"
-			case "A" -> {
+			case "a" -> {
 				System.out.println(Arrays.toString(tabla));
 			}
 			// peticion de valores para variables v y p al usuario en caso "b"
-			case "B" -> {
+			case "b" -> {
 				System.out.println("Introduzca un valor a eliminar del array: ");
 				valor = dogma.nextInt();
 
@@ -76,7 +74,7 @@ public class Ejercicio3 {
 			}
 			// Establezco condicion mientras que seleccion sea diferente a "C"
 			// que de cumplirse mantendra el bucle en ejecucion
-		} while (!seleccion.equals("C"));
+		} while (!seleccion.equals("c"));
 
 		dogma.close();
 	}
