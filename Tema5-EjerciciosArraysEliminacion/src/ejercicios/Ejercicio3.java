@@ -25,6 +25,8 @@ public class Ejercicio3 {
 
 		System.out.println(Arrays.toString(tabla));
 
+		// bloque de instrucciones que se ejecutara una vez antes de comprobar la
+		// condicion del bucle while
 		do {
 			System.out.println("Seleccione una opcion del siguiente menu: ");
 			System.out.println("a. Mostrar valores. ");
@@ -32,10 +34,10 @@ public class Ejercicio3 {
 			System.out.println("c. Salir. ");
 
 			seleccion = dogma.next();
-			seleccion=seleccion.toLowerCase();
-			// el cambia mayus no funciona?
 
-		
+			// igualo seleccion a seleccion.toLowerCase para asegurarme que la letra
+			// introducida por el usuario es minuscula
+			seleccion = seleccion.toLowerCase();
 
 			// switch que evaluara a seleccion
 			switch (seleccion) {
