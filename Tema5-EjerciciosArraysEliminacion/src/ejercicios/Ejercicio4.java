@@ -7,7 +7,7 @@ public class Ejercicio4 {
 
 	public static void main(String[] args) {
 
-		int tabla[] = new int[5];
+		int tabla[] = new int[20];
 
 		int numeroIntroducido;
 
